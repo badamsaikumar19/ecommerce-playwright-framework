@@ -1,0 +1,28 @@
+{
+  "name": "ecommerce-playwright-framework",
+  "version": "1.0.0",
+  "description": "Scalable Playwright E2E Framework for AutomationExercise.com",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badamsaikumar19/ecommerce-playwright-framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/badamsaikumar19/ecommerce-playwright-framework/issues"
+  },
+  "homepage": "https://github.com/badamsaikumar19/ecommerce-playwright-framework#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^10.3.0",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.3.5",
+    "allure-commandline": "^2.37.0",
+    "allure-playwright": "^3.6.0",
+    "dotenv": "^17.3.1",
+    "zod": "^4.3.6"
+  }
+}
