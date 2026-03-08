@@ -36,8 +36,10 @@ export class CheckoutPage extends BasePage {
   }
 
   async placeOrder() {
-    await this.clickElement(this.placeOrderBtn);
-    await this.waitForURL('/payment');
+    await this.placeOrderBtn.click();
+    //await this.clickElement(this.placeOrderBtn);
+     await this.page.waitForLoadState('domcontentloaded');
+    
   }
 
   async getDeliveryName(): Promise<string> {

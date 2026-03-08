@@ -87,6 +87,8 @@ test.beforeEach(async ({ page }) => {
       'google-analytics.com',
       'adservice.google.com',
       'amazon-adsystem.com',
+      'google.com/pagead',       // ← add this
+  'pagead2.googlesyndication.com',
     ];
     const url = route.request().url();
     if (blockedDomains.some(domain => url.includes(domain))) {
