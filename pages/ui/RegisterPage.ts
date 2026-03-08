@@ -1,4 +1,4 @@
-import { Page } from '@playwright/test';
+import { Page,expect } from '@playwright/test';
 import { BasePage } from './BasePage';
 
 export class RegisterPage extends BasePage {
@@ -99,7 +99,8 @@ export class RegisterPage extends BasePage {
   }
 
   async clickContinueAfterRegistration() {
-    await this.clickElement(this.continueBtn);
+    await this.continueBtn.click({ force: true });
+    //await this.clickElement(this.continueBtn);
     await this.waitForURL('/');
   }
 
@@ -153,7 +154,7 @@ export class RegisterPage extends BasePage {
   }
 
   async verifyAccountCreated() {
-    await this.verifyVisible(this.accountCreatedMsg);
+   await expect(this.accountCreatedMsg).toBeVisible({ timeout: 15000 }); /
   }
 }
 

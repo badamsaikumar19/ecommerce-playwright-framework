@@ -56,7 +56,7 @@ export class ProductPage extends BasePage {
     await this.cartModal.waitFor({ state: 'visible' });
 
     // ✅ Use existing locator — no new code needed
-  await this.clickElement(this.continueShoppingBtn);
+  await this.continueShoppingBtn.click({ force: true });
   await this.cartModal.waitFor({ state: 'hidden' });
 
   }

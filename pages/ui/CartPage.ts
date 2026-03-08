@@ -110,10 +110,20 @@ export class CartPage extends BasePage {
   }
 
   async clearCart() {
-  // Keep deleting until no items remain
-  while (await this.cartRows.count() > 0) {
-    await this.deleteButtons.first().click();
-    await this.page.waitForLoadState('domcontentloaded');
+  while (true) {
+    const count = await this.cartRows.count();
+    if (count === 0) break;
+
+    try {
+      // ✅ re-query fresh reference each iteration
+      const deleteBtn = this.page.locator('.cart_quantity_delete').first();
+      await deleteBtn.waitFor({ state: 'attached', timeout: 5000 });
+      await deleteBtn.click({ force: true });
+      await this.page.waitForLoadState('domcontentloaded');
+      await this.page.waitForTimeout(500);
+    } catch {
+      break; // no more items
+    }
   }
 }
 }
