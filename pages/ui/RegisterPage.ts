@@ -154,7 +154,7 @@ export class RegisterPage extends BasePage {
   }
 
   async verifyAccountCreated() {
-   await expect(this.accountCreatedMsg).toBeVisible({ timeout: 15000 }); /
+   await expect(this.accountCreatedMsg).toBeVisible({ timeout: 15000 }); 
   }
 }
 
