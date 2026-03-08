@@ -17,7 +17,7 @@ export default defineConfig({
   ],
   use: {
     baseURL: process.env.BASE_URL || 'https://automationexercise.com',
-    headless: false,
+    headless: !!process.env.CI,
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     trace: 'on-first-retry',
@@ -31,7 +31,7 @@ export default defineConfig({
       name: 'chromium',
       
       use: {
-        channel:'chrome',
+        channel:process.env.CI ? undefined : 'chrome',  // ← real Chrome locally, chromium in CI ,
         viewport: null,                    // ✅ keep this in project
         launchOptions: {
           args: ['--start-maximized'],     // ✅ move here, under project
