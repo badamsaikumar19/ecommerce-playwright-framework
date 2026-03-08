@@ -1,0 +1,94 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - link "Website for automation practice" [ref=e8] [cursor=pointer]:
+        - /url: /
+        - img "Website for automation practice" [ref=e9]
+      - list [ref=e12]:
+        - listitem [ref=e13]:
+          - link " Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e15]: 
+            - text: Home
+        - listitem [ref=e16]:
+          - link " Products" [ref=e17] [cursor=pointer]:
+            - /url: /products
+            - generic [ref=e18]: 
+            - text: Products
+        - listitem [ref=e19]:
+          - link " Cart" [ref=e20] [cursor=pointer]:
+            - /url: /view_cart
+            - generic [ref=e21]: 
+            - text: Cart
+        - listitem [ref=e22]:
+          - link " Signup / Login" [ref=e23] [cursor=pointer]:
+            - /url: /login
+            - generic [ref=e24]: 
+            - text: Signup / Login
+        - listitem [ref=e25]:
+          - link " Test Cases" [ref=e26] [cursor=pointer]:
+            - /url: /test_cases
+            - generic [ref=e27]: 
+            - text: Test Cases
+        - listitem [ref=e28]:
+          - link " API Testing" [ref=e29] [cursor=pointer]:
+            - /url: /api_list
+            - generic [ref=e30]: 
+            - text: API Testing
+        - listitem [ref=e31]:
+          - link " Video Tutorials" [ref=e32] [cursor=pointer]:
+            - /url: https://www.youtube.com/c/AutomationExercise
+            - generic [ref=e33]: 
+            - text: Video Tutorials
+        - listitem [ref=e34]:
+          - link " Contact us" [ref=e35] [cursor=pointer]:
+            - /url: /contact_us
+            - generic [ref=e36]: 
+            - text: Contact us
+  - generic [ref=e39]:
+    - generic [ref=e41]:
+      - heading "Login to your account" [level=2] [ref=e42]
+      - generic [ref=e43]:
+        - textbox "Email Address" [ref=e44]
+        - textbox "Password" [ref=e45]
+        - button "Login" [ref=e46] [cursor=pointer]
+    - heading "OR" [level=2] [ref=e48]
+    - generic [ref=e50]:
+      - heading "New User Signup!" [level=2] [ref=e51]
+      - generic [ref=e52]:
+        - textbox "Name" [ref=e53]
+        - textbox "Email Address" [ref=e54]
+        - button "Signup" [ref=e55] [cursor=pointer]
+  - contentinfo [ref=e56]:
+    - generic [ref=e61]:
+      - heading "Subscription" [level=2] [ref=e62]
+      - generic [ref=e63]:
+        - textbox "Your email address" [ref=e64]
+        - button "" [ref=e65] [cursor=pointer]:
+          - generic [ref=e66]: 
+        - paragraph [ref=e67]:
+          - text: Get the most recent updates from
+          - text: our site and be updated your self...
+    - generic [ref=e68]:
+      - generic:
+        - insertion:
+          - generic:
+            - iframe
+      - paragraph [ref=e71]: Copyright © 2021 All rights reserved
+  - text: 
+  - insertion [ref=e72]:
+    - iframe [ref=e75]:
+      - iframe [ref=f10e1]:
+        - generic [ref=f11e2]:
+          - link "Advertisement" [ref=f11e4] [cursor=pointer]:
+            - /url: https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstPei0GGh4xkJg55q4UBRSjpYfHdmn_oNyYFKsx6w15WaCdHRztLhfcB7Zezhn7hCnJ5ZlgEGsexbxaFG6FT5wg18ZAIcKMYCl5uSQnZ9BMrRsRQhZ1JN7-FOjCNvmW2FHeOjWxbPqTQ0eEyTxsQ4iAToXrhEw4CoB9wXMd0Qdf74Oo-XTmZemciQZuv5hkRFMGC1ivbmYxVVOgcjwV_si3lL9sMLjYz66GJYR9OLNdpB-3pp7iDew-w5H6Swh3v9yHKf82YptFZnxIBWCmOpfpRSkjN6D9AOmFjMhorjPEMHQYJAXv3Ex3rkAoQwh5YqUJbXu1hJvCMEu9wG5vbhuK8SqTAbYE8J01zQzXY92DiI-SdXthwnJC1HdCkZyKV-dk95RX34Q8BZ-0Mc-B8s0_DNPgv_dzjNsnUwMWZ8RAukIZoaeV1286KNiL10DNkiz6NlLsNgbPS4oG_WnFEkkhyKqFCVtjjre45GwmmUQC7C0h0V3cJ1jRyNQ2x3Ihww1tjhO5kZIvliQJ0i8DZOTvkqXTJcME2UKc28S98Lb5XTP1FZcbZR7yVl1M-P3igOu1Faw8VvCirmS7EszjTYcu8tzC6vgyWPFH0PjmYMdd5XyL4QXLpLH348M5CR4bD9GuOYlV6puzS-wkIv9B3hdYLwdNvIQaex5IGfVdTPy5nimq-lRwey4a5FoA7Kb-5vgCNHOYF8xUO7p-w43hLjN5QlCRzaIb94bJECXx-alffpqfj__mWWyiG6ANuwErO_I9Ry5VoAeh5MGpiF6NCt1MjCuZD9SQYETGP00G2-va9pZadz6wrIQ2DXYTLxm8_Md2Q45RnhuyigtqzTJjE9rhoknPpi_ENTJ9pXucDtE6JOizWPf933oT7gMuGOhqX9h17oJXG1w1CrSYrPVld6QHXlDyipZKE7PlEs-W21zLe9BveIgcBqHIBjPgYePmdue7jCA8yXkYmW3Ou1E5PLYenwCRfEH5QbGZK6Rs9LNx1SJ4wsteNhktPid9YIphFvQZ6qpuKlfr5YMT0vdveEg7-5qQeth_iVhWcv991vEIK5NUzoLHQM9MLqV71EFUtgmTmdSe0bJZXvo1Hitkg9vHUEQozzvJ0SrrXd3yngW4fNEI8E_tlH1arWnfSd_YI7eL59bbd_8XKbZs6WR9c18DujVO3bLZIYaxp2Mn77eonboyEQmYESd88KXH4RAHTIYaF1a632UQBFhBA8WTtIx8IvTntkc1MSCA1dBCawNuUVHXvGosLmxXK9x5w18a5ms3ICCHniNd9HJFoh565WqTPYTMAfVBE6oY87HsJ4uoSwfyLkIAdt_2I2Jj2nR5NSm7wR-zn9xOREN4K9S8WcVqU5G_cal_Z-IM45RCdT5ISdYYOMHJpeKBj2zRclD4xoZtM5a_l3uiFYoxI08l_K1AiqfbP62H0QuM-C9AVlwQD7YRSNZLFk-ETySCew0qy5S_ZyGk_VhvMXQFzogcGRQ8TCnnW9fCux2CCq9H4eQl2n1Pbjod6HnqxHc8-TOAuopeQQPvQrEOtWG-HXeYAQQ5HkRak2d7yOHicCV-yTPn2zR9-5Ni9adwX31wcdsHBizHpJq-GsX0VduZQhnBmYgH2wZIaKQoobeADK7xJKegkuRoIbjO8GLfQozhZLiyjyhuVaEo5fGUdMuQ_11nKuZxTxwWuCNFEuB8t7oYvVAiFj4aZXutQCd-w9wgQ1UliV7gPEpBNzlshqs5Fy_QQSx5IFFUXDNCoKHcLdOuSY07y9O6XcFEbWrSb_AIB8o6t6IdVdSGYRBRzoKIQy0TKm-PE7D_X3JnQBx4KxKf0kHvtX_5M2e6-sEEGMno5BbxZI2aBHzMybUerRSuEgaGzYy_LavjWg&sai=AMfl-YRoVAC9kdqZZ3beGxNOjoJnVkfRloZ3TvzNDGt1OuCnHQogepJqTM1bSL8WjPBR2dLjJGVfN0Wj9Q5K0dd05Xl1MLD5RdYhAlWDt6-k_y-3mWGnScWD_ATr5YiB-LS_QJlRSBo3KEdMo02zhmVBDR07Zwgz5ORQleP6pvSflxJ2Wh5po6fDvNX82pFzhpjvvGwXdSoKdIUHPD51PkAd63t6joXQwDjx_nsjOotxvW0dzSlAV9x_Lg7972Su8cOvOzGBDucCyM7d6MaFP-KQTCpLcIBm3yoWShF6_OjrrpuvGXuLemg2JF0AGhLqeQZQHLqDER2l26CTtisYnWv_o7btRYHj5jr3TWR4yN6jQM6-eIpYiJH59Yd4erWcX0Uk1W4yK8D0OMseF06C5DLJqoXYe7_3n4y7ciWu0pPBTsDGAf9aZ667uKNUcxnOGUurVsaa-if1FkP-dZQLJUzIDcZd0vGoejbj_Pfs30dcGQy_GxPnEIfLjEzNAL5hYOY8qo-kOX5yms0mMkUT716CdMjTGhnp_IbmokAVYnvwWSUYWO9SR44PyRcQDQdTmg_O89ApdrFguSjHKeDkY0tHBV5GIBNDWqSaLyLhjBgufNW_sqjUloTX6Ndqp6XO6t51kizo7Gw0&sig=Cg0ArKJSzOnb6G_hVWp4&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://www.zebra.com/ap/en/cpn/manufacturing-intelligent-operations.html%3Futm_source%3Dprogrammatic%26utm_medium%3Dcpc%26utm_campaign%3DBrand%2BActivation%26tactic_type%3DADE%25C2%25A0%25C2%25A0%26tactic_detail%3DMF%25C2%25A0_AV_AB_BetterBeginsNow_Banner%25C2%25A0%2Ben%25C2%25A0_APAC%25C2%25A0_IN%26dclid%3D%25edclid!%26gad_source%3D7%26gad_campaignid%3D23599295690
+            - img "Advertisement" [ref=f11e5]
+          - generic [ref=f11e6]:
+            - generic:
+              - img [ref=f11e10] [cursor=pointer]
+              - button [ref=f11e12] [cursor=pointer]:
+                - img [ref=f11e13]
+```
